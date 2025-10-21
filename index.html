@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mesmerizing 3D To-Do App ✨</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated Background Orbs -->
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+  <div class="orb orb4"></div>
+  <div class="orb orb5"></div>
+
+  <!-- Custom Fancy Cursor -->
+  <div id="cursor">
+    <div class="cursor-core"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- Main App -->
+  <main class="app" id="app">
+    <header class="app-header">
+      <h1>My To-Do</h1>
+      <p class="subtitle">Plan beautifully — live magically ✨</p>
+    </header>
+
+    <section class="input-area">
+      <form id="task-form" aria-label="Add new task">
+        <input id="task-input" autocomplete="off" placeholder="Add a new task and press Enter..." />
+        <button type="submit" id="add-btn" class="btn-3d">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Add
+        </button>
+      </form>
+    </section>
+
+    <section class="controls">
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="active">Active</button>
+        <button class="filter" data-filter="completed">Completed</button>
+      </div>
+      <div class="actions">
+        <span id="task-count">0 items</span>
+        <button id="clear-completed" class="ghost">Clear completed</button>
+      </div>
+    </section>
+
+    <section class="todo-list-wrap">
+      <ul id="todo-list"></ul>
+    </section>
+
+    <footer class="app-footer">
+      <small>Built with ❤️ using Vanilla JS • Magical gradients & floating orbs 🌈</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
